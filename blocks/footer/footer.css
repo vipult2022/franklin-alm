@@ -1,12 +1,29 @@
 footer {
   padding: 2rem;
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-s);
+  background-color: var(--dark-background-color);
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color-light);
+}
+
+footer .icon-globe{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+footer .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.default-content-wrapper > p{
+  display: flex;
+  gap: 1rem;
 }
 
 footer .footer {
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: auto;
+  padding: 0 1rem;
 }
 
 footer .footer p {

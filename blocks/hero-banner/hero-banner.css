@@ -1,0 +1,81 @@
+.hero-main {
+    background: steelblue;
+    position: relative;
+    width: 100%;
+    height: 589px;
+}
+
+picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+picture img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.hero-main .banner-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 683px;
+    padding: 72px;
+}
+
+.hero-main .banner-content h1{
+    font-size: 56px;
+    font-family: var(--font-family-adobe-bold);
+    margin: 0;
+}
+
+.hero-main .banner-content p{
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.hero-main .banner-content a{
+    font-size: 17px;
+    padding: 8px 22px 11px;
+    margin: 0;
+    font-family: var(--font-family-adobe-bold);
+    color: var(--text-color-light);
+    width: 139px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--link-color);
+}
+
+.hero-banner.block {
+    position: relative;
+    overflow: hidden;
+    padding: 12.25rem 0;
+}
+
+.vt-hero-banner-bg-image{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.vt-hero-banner-content-wrapper {
+    max-width: var(--container-width);
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.vt-hero-banner-content{
+    width: 50%;
+}

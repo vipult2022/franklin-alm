@@ -1,0 +1,48 @@
+.vt-team-block-profile-wrapper{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.team-block.block {
+    position: relative;
+    overflow: hidden;
+    padding: 12.25rem 0;
+}
+
+.vt-team-block-bg-image{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.vt-team-block-heading-block {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.vt-team-block-profile div h4 {
+    font-family: var(--body-font-family);
+    font-weight: bold;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.vt-team-block-profile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem
+}
+
+.vt-team-block-profile div p {
+    font-family: var(--body-font-family);
+    font-weight: bold;
+    margin: 0;
+}
