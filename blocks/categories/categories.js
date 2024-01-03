@@ -1,4 +1,4 @@
-import fetchData from '../../scripts/utils.js';
+import fetchData from '../../scripts/scripts.js';
 
 export default async function decorate(block) {
   const blockName = 'vt-categories';
