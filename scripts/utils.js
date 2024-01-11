@@ -42,7 +42,7 @@ async function fetchAlmData(url, type = 'GET', objParam = {}, data = {}) {
       headers: {
         // 'Content-Type': 'application/json',
         Accept: 'application/vnd.api+json',
-        Authorization: 'Bearer 1e30c8adbe68eb30843f0c70c07f1c93',
+        Authorization: 'Bearer ad32126e37af6dff58cf7d025ef30937',
       },
       redirect: 'follow', // manual, *follow, error
       referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
