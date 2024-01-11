@@ -196,6 +196,15 @@ h6 {
   display: flex;
 }
 
+.api-cards-block .card .image-block {
+  position: relative;
+  padding-top: 59.1%;
+}
+.api-cards-block .card .image-block picture{
+  position: absolute;
+  top: 0
+}
+
 .api-cards-block .design1 .card .image-block {
   position: relative;
   padding-top: 133.3971%;;
@@ -203,9 +212,13 @@ h6 {
 }
 
 .api-cards-block .design1 .col-6 .card .image-block {
-  /* padding-top: 62.0588235294%; */
-  padding-top: 0;
+  padding-top: 67.0588235294%;
 }
+.api-cards-block .design1 .col-6 .card .image-block picture{
+  position: absolute;
+  top: 0;
+}
+
 
 /* .image-block>img {
   position: absolute;
