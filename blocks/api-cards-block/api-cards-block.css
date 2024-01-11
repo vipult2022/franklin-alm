@@ -185,6 +185,11 @@ h6 {
 .api-cards-block .card .title {
   font-size: var(--gutter-space);
   min-height: 2.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0;
 }
 
 .api-cards-block .card ul {
