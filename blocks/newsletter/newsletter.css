@@ -1,11 +1,11 @@
-.testimonial.block {
+.newsletter.block {
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
-.vt-testimonial-content-wrapper{
+.vt-newsletter-content-wrapper{
     z-index: 1;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -13,16 +13,16 @@
     padding: 0 1rem;
 }
 
-.vt-testimonial-content h2 {
+.vt-newsletter-content h2 {
     font-size: 29px;
 }
 
-.vt-testimonial-content strong{
+.vt-newsletter-content strong{
     font-family: var(--font-family-adobe-bold);
     color: var(--text-color-secondary)
 }
 
-.vt-testimonial-bg-image{
+.vt-newsletter-bg-image{
     position: absolute;
     top: 0;
     height: 100%;

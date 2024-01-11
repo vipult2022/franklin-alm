@@ -1,0 +1,245 @@
+:root {
+  --container-size: 1440px;
+  --base-space: .5rem;
+  --base-border-radius: 1rem;
+  --color-black: #1f2c40;
+  --color-green-light: #74C28F;
+  --color-blue-primary: #0265dc;
+  --color-blue-secondary: #3A829C;
+  --color-white: #fff;
+}
+
+body {
+  font-size: var(--body-font-size-xs);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* ---------- GRID ------------ */
+.row.design1 {
+  display: grid;
+  margin: 0 -1.25rem;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+/* .row>div[class*="col-"] {
+  padding: 0 var(--gutter-space);
+  flex: 0 0 0;
+}
+
+.row>div[class="col-6"] {
+  flex-basis: 50%;
+}
+
+.row>div[class="col-3"] {
+  flex-basis: 25%;
+}
+
+.row>div[class="col-4"] {
+  flex-basis: 33.33%;
+} */
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--gutter-space);
+  max-width: var(--container-size);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.events {
+  padding: 7rem 0;
+}
+
+/* ---------- TYPOGRAPHY ------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.heading-block {
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.heading-block .heading {
+  font-size: var(--body-font-size-m);
+  font-weight: bold;
+  margin: 0 0 var(--base-space);
+}
+
+/* ---------- BUTTON ------------ */
+.btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--color-blue-primary);
+  border-radius: var(--gutter-space);
+  padding: var(--base-space) var(--gutter-space);
+  border: 1px solid var(--color-blue-primary);
+  font-size: var(--body-font-size-xs);
+  background-color: var(--color-white);
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-blue-primary);
+  color: var(--color-white);
+}
+
+.tag {
+  display: inline-flex;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 0.25rem;
+  padding: 0.25em var(--base-space);
+  font-size: 0.75rem;
+
+}
+
+/* ---------- ICONS ------------ */
+
+.icon {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1rem;
+  width: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background-color: var(--color-black); */
+}
+
+.api-cards-block .card .icon {
+  margin-right: var(--base-space);
+}
+
+.api-cards-block .design1 .primary .icon {
+  filter: invert(94%) sepia(100%) saturate(6%) hue-rotate(195deg) brightness(220%) contrast(100%);
+}
+
+.icon-calender {
+  background-image: url('../../icons/calender.svg');
+}
+
+.icon-pin {
+  background-image: url('../../icons/pin.svg');
+}
+
+.icon-clock {
+  background-image: url('../../icons/clock.svg');
+}
+
+/* ---------- CARD ------------ */
+.api-cards-block .card {
+  border-radius: var(--base-border-radius);
+  overflow: hidden;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.api-cards-block .card img {
+  width: 100%;
+  display: block;
+}
+
+
+.api-cards-block .card figcaption {
+  /* background-color: var(--color-green-light); */
+  background-color: #74c28f1a;
+  padding: 1.5rem;
+}
+
+.api-cards-block .design2 .card figcaption {
+  background-color: var(--background-color);
+  padding: 1.5em;
+}
+
+.api-cards-block .design1 .card.primary figcaption {
+  background-color: var(--color-blue-secondary);
+}
+
+.api-cards-block .design1 .card.primary {
+  color: var(--color-white);
+}
+
+.api-cards-block .card .title {
+  font-size: var(--gutter-space);
+  min-height: 2.75rem;
+}
+
+.api-cards-block .card ul {
+  margin-bottom: 1.5rem;
+}
+
+.api-cards-block .card li {
+  margin-top: 0.75rem;
+  display: flex;
+}
+
+.api-cards-block .design1 .card .image-block {
+  position: relative;
+  padding-top: 133.3971%;;
+  background-color: var(--color-green-light);
+}
+
+.api-cards-block .design1 .col-6 .card .image-block {
+  /* padding-top: 62.0588235294%; */
+  padding-top: 0;
+}
+
+/* .image-block>img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  height: 100%;
+} */
+
+.api-cards-block .design1 .col-3 picture {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+
+.api-cards-block .col-3 picture img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/********* DESIGN 2 *********/
+
+.row.design2 {
+  display: grid;
+  margin: 0 -1.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.api-cards-block .design2 .card{
+  box-shadow: 0 3px 6px 0 #00000029;
+}

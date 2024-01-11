@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  const blockName = 'vt-testimonial';
+  const blockName = 'vt-newsletter';
   const picture = block.querySelector('picture');
   const headings = block.querySelectorAll('h1, h2, h3, h4, h5, h6');
   const ctaButtons = block.querySelectorAll('.button-container a');

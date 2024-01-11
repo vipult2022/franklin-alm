@@ -306,6 +306,7 @@ function createOptimizedPicture(
   alt = '',
   eager = false,
   breakpoints = [{ media: '(min-width: 600px)', width: '2000' }, { width: '750' }],
+  isExternal = false,
 ) {
   const url = new URL(src, window.location.href);
   const picture = document.createElement('picture');
@@ -317,7 +318,7 @@ function createOptimizedPicture(
     const source = document.createElement('source');
     if (br.media) source.setAttribute('media', br.media);
     source.setAttribute('type', 'image/webp');
-    source.setAttribute('srcset', `${pathname}?width=${br.width}&format=webply&optimize=medium`);
+    source.setAttribute('srcset', `${isExternal ? src : pathname}?width=${br.width}&format=webply&optimize=medium`);
     picture.appendChild(source);
   });
 
