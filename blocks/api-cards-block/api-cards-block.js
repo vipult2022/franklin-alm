@@ -1,4 +1,4 @@
-import { fetchData, fetchAlmData } from '../../scripts/utils.js';
+import { fetchAlmData } from '../../scripts/utils.js';
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 const createHtml = (response, obj) => {
