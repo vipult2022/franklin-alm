@@ -1,2 +1,6 @@
 mountpoints:
   /: https://adobe.sharepoint.com/sites/VT-UINoida/Shared%20Documents/fr-alm
+
+folders:
+  # Generate everything on and below /courses with the "generic-product"
+  /courses: /courses/default
